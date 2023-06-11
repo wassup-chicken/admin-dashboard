@@ -10,43 +10,77 @@
 <body>
     <div class="container">
         <div class="header">
+
             <div class="search">
-            <div>Search Bar</div>
+              <div class="searchimage"><img src="./images/magnify.svg" /></div>
+              <div class="input"><input type="text"></div>
             </div>
+
             <div class="profile">
-                <div>Notification</div>
-                <div>Profile Avatar</div>
-                <div>Profile</div>
+                <div class="profileli"><img src="./images/bell-ring-outline.svg" /></div>
+                <div class="profileli">Profile Avatar</div>
+                <div class="profileli"><p>Wassup Chicken</p></div>
             </div>
-            <div class="mesage">
-            <div>Hello there, Wassup Chicken</div>
+
+            <div class="message">
+            <div><p>Hello there,</p><p>Wassup Chicken (@wassup_chicken)</p></div>
             </div>
+            
             <div class="action">
-                <ul>
-                  <li>New</li>
-                  <li>Upload</li>
-                  <li>Share</li>
-                </ul>
-              </div>
+                  <button>New</button>
+                  <button>Upload</button>
+                  <button>Share</button>
+            </div>
         </div>
 
         <div class="sidebar">
-            <h1 class="logo">Wassup Chicken</h1>
+          <div class="logo">
+            <img class="logoimg" src="./images/view-dashboard.svg" />
+            <h1 class="name">Wassup Chicken</h1>
+          </div>
+
         <div class="menu">
           <ul>
+            <div class="menuitem">
+            <img src="./images/home.svg"/>
             <li>Home</li>
+          </div>
+          <div class="menuitem">
+            <img src="./images/account.svg" />
             <li>Profile</li>
+          </div>
+          <div class="menuitem">
+            <img src="./images/message.svg" />
             <li>Messages</li>
+          </div>
+          <div class="menuitem">
+            <img src="./images/history.svg" />
             <li>History</li>
+          </div>
+          <div class="menuitem">
+            <img src="./images/calendar-check.svg" />
             <li>Tasks</li>
+          </div>
+          <div class="menuitem">
+            <img src="./images/account-group.svg" />
             <li>Communities</li>
+          </div>
           </ul>
         </div>
         <div class="settings">
             <ul>
-              <li>Settings</li>
-              <li>Support</li>
-              <li>Privacy</li>
+              <div class="menuitem">
+                <img src="./images/cog.svg" />
+                <li>Settings</li>
+              </div>
+              <div class="menuitem">
+                <img src="./images/face-agent.svg" />
+                <li>Support</li>
+              </div>
+              <div class="menuitem">
+                <img src="./images/shield-check.svg" />
+                <li>Privacy</li>
+              </div>
             </ul>
             
           </div>
@@ -55,38 +89,45 @@
         <div class="projects">
             <div class="left">
             <div class="card">
-                <p class="title">Article Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <p class="title"><a href="https://github.com/wassup-chicken/etch-a-sketch">Etch A Sketch</a></p>
+                <p>This is a html css javascript project for etch-a-sketch. Fun project and interactive!</p>
               </div>
               <div class="card">
-                <p class="title">Article Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <p class="title"><a href="https://github.com/wassup-chicken/calculator">Calculator</a></p>
+                <p>Calculator made with HTML CSS and Javascript. </p>
               </div>
               <div class="card">
-                <p class="title">Article Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <p class="title"><a href="https://github.com/wassup-chicken/rock-paper-scissors">Rock Paper Scissors</a></p>
+                <p>Rock paper scissors game with the 'Machine' built with HTML CSS and Javascript</p>
               </div>
               <div class="card">
-                <p class="title">Article Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <p class="title"><a href="https://github.com/wassup-chicken/landing_page">Landing Page</a></p>
+                <p>Not the best landing page...</p>
               </div>
               <div class="card">
-                <p class="title">Article Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <p class="title"><a href="https://github.com/wassup-chicken/admin-dashboard">Admin Dashboard</a></p>
+                <p>Admin Dashboard page built with HTML and CSS, using grid and flex! Flex your CSS skills with Grid!</p>
+              </div>
+              <div class="card">
+                <p class="title"><a href="https://github.com/wassup-chicken/odin-recipes">Odin Recipes</a></p>
+                <p>First web development with the Odin Project using basic HTML and CSS skillz..</p>
               </div>
             </div>
             <div class="right">
                 <div class="announcement">
                     <p>Announcmenet</p>
-                    <div class="card">
+                    <div class="content">
                         <div class="card">
-                            <p>Site Maintenance</p>
+                            <p class="title">Site Maintenance</p>
+                            <p>Everything is looking good today!</p>
                         </div>
                         <div class="card">
-                            <p>Community Share Day</p>
+                            <p class="title">Community Share Day</p>
+                            <p>Continue to learn.. what's next?</p>
                         </div>
                         <div class="card">
-                            <p>Updated Privacy Policy</p>
+                            <p class="title">Updated Privacy Policy</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                         </div>
                     </div>
                 </div>
@@ -94,9 +135,6 @@
                     <p>Trending</p>
                     <div class="card">
                         <ul>
-                            <li>@wassup_chicken</li>
-                            <li>@wassup_chicken</li>
-                            <li>@wassup_chicken</li>
                             <li>@wassup_chicken</li>
                         </ul>
                     </div>

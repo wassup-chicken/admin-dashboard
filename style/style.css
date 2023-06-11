@@ -5,35 +5,95 @@ body, html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 2fr 10fr;
     grid-template-rows: 1fr 6fr;
     height: 100%;
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: #a7f3d0;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
-    padding: 10px;
+    grid-template-rows: 1fr 2fr 3fr;
+    padding: 25px;
+    text-align: left;
+}
+
+.menu {
+    grid-row: 2 / 3;
+}
+
+.settings {
+    grid-row: 3 / 4;
+}
+
+.menuitem {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    grid-row: 1 / 2;
+    height: 75px;
+    width: 75px;
+}
+
+.name {
+    align-items: center;
+}
+
+.menu > ul > li {
+    grid-column: 2 / 3;
 }
 
 .profile {
     display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header {
     display: grid;
-    background-color: pink;
-    padding: 10px;
+    background-color: #f0fdf4;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.input {
+    border-radius: 12px;
+    grid-column: 2 / 3;
+    width: 100%;
+}
+
+.message {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.input > input {
+    width: 70%;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
 }
 
 ul {
@@ -48,9 +108,17 @@ ul li {
     font-weight: bold;
 }
 
-.action ul {
+.header > .action {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  margin: 10px;
+}
+
+button {
+    border-radius: 25px;
+    background-color: beige;
+    margin: 10px;
 }
 
 .projects {
@@ -58,7 +126,7 @@ ul li {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    gap: 15px;
+    gap: 30px;
 }
 
 .left {
@@ -80,5 +148,17 @@ ul li {
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border-radius: 12px;
 }
 
+
+.content {
+    background-color: #f0fdf4;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
